@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Chronos</h1>
+    <div id="opçao">
+        <h5>coleçao</h5>
+        <h5>masculino</h5>
+        <h5>Feminino</h5>
+        <h5>sobre</h5>
+        <h5>contato</h5>
+    </div>
+        <div id="menu">
+        <img src="./img/icon-cart.svg" alt="icone">
+        <img src="./img/avatar.jpg" alt="avatar" id="logo" >
+    </div>
+
+    
+    </header>
+
+    <div id="caixa-menu" style="display: none;">
+        <h4>carrinho</h4>
+       
+        <hr>
+        
+        <div id="carrinho-menu"> 
+            <h3>seu carrinho está vazio.</h3>
+        </div>
+    </div>
+    
+    <section id="geral">
+        <div>
+            <div id="selecionada">
+                <img src="./img/image-product-1.jpg" alt="produto">
+            </div>
+            <div id="selecionar">
+                
+                <a href="./img/image-product-1.jpg" data-fancybox="gallery" data-caption="Imagem 1">
+                    <img src="./img/image-product-1-thumbnail.jpg" alt="Imagem 1">
+                </a>
+                <a href="./img/image-product-2.jpg" data-fancybox="gallery" data-caption="Imagem 2">
+                    <img src="./img/image-product-2-thumbnail.jpg" alt="Imagem 2">
+                </a>
+                <a href="./img/image-product-3.jpg" data-fancybox="gallery" data-caption="Imagem 3">
+                    <img src="./img/image-product-3-thumbnail.jpg" alt="Imagem 1">
+                </a>
+                <a href="./img/image-product-4.jpg" data-fancybox="gallery" data-caption="Imagem 4">
+                    <img src="./img/image-product-4-thumbnail.jpg" alt="Imagem 2">
+                </a>
+            </div>
+        </div>
+        <div id="txt">
+            <h5>Chronos.Virtual</h5>
+            <br>
+            <h1>Tenis de edição limitada de outono</h1>
+            <br>
+            <br>
+            <h6>Estes tenis são seus companheiros perfeitos para uso casual. com sola externa de borracha durável, eles vão suportar tudo o que  o clima pode oferecer.</h6>
+            <br>
+            <div id="valor">
+            <h1>$125,00</h1> <div id="porcentagem"><h1>50%</h1></div>
+        </div>
+            <h5><s>$250,00</s></h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="add">
+                <div id="adicionar">
+                <button id="menos">-</button>
+                <div id="quantidade">0</div>
+                <button id="mais">+</button>
+                
+            </div>
+            <div id="carrinho"><button id="addCar"><img src="./img/icon-cart.svg" alt="icone">adicionar ao carrinho</button></div>
+        </div>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
