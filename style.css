@@ -213,3 +213,165 @@ h6{
 #excluir{
     cursor: pointer;
 }
+#menu-toggle{
+    display: none;
+}
+.slideshow-container{
+    display: none;
+}
+#sidebar{
+    display: none;
+}
+
+@media (max-width: 750px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #geral{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #menu-toggle{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0 20px;
+    }
+    .slideshow-container{
+        display: block;
+    }
+    #sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Esconde à esquerda */
+        width: 250px;
+        height: 100%;
+        background-color:white;
+        color: #333;
+        transition: left 0.3s ease;
+        z-index: 1000; /* Para garantir que fique sobre outros elementos */
+    }
+    
+    #sidebar.open {
+        left: 0; /* Mostra quando aberto */
+    }
+    
+    #sidebar nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #sidebar nav ul li {
+        padding: 10px;
+        margin: 0 10px;
+    }
+    
+    #sidebar nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    #close-sidebar {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        margin: 20px;
+    }
+
+    #opçao{
+        display:none;
+
+
+    }
+
+    header{
+        margin: 0;
+        padding: 15px;
+
+    }
+    #menu{
+    margin: 0px;
+    }
+
+    #selecionada{
+        display: none;
+    }
+
+    #selecionar{
+        display: none;
+    }
+    .slideshow-container{
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slideshow-container button{
+        position: absolute;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 100%;
+        border: none;
+    }
+    #nextBtn{
+        right: 5px; 
+    }
+    #prevBtn{
+        left: 5px;
+        transform: rotate(180deg);
+    }
+    .slide{
+        display: none;
+    }
+    .slideshow-container img{
+        width: 100%;
+        height: auto;
+    }
+    .fade{
+        animation: fade 1s;
+    }
+
+    @keyframes fade {
+        from { opacity: 0;}
+        to { opacity: 1;}
+    }
+    #txt{
+        margin: 4%;
+        
+    }
+    #txt h5 s{      
+        display: flex;
+        justify-content: end;
+    }
+    #add{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #adicionar{
+        width: 100%;
+        
+    }
+    #carrinho{
+        width: 100%;
+        margin: 10px 0;
+        height: 40px;
+    }
+    #caixa-menu{
+        z-index: 1;
+        justify-items: center;
+        left: 20px;
+        border-radius: 10px;
+        width: 90%;
+        box-shadow: -8px 8px 15px rgba(0, 0, 0, 0.5);
+    }
+}

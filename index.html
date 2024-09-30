@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>
+        <button id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
         <h1>Chronos</h1>
     <div id="opçao">
         <h5>coleçao</h5>
@@ -27,6 +28,20 @@
 
     
     </header>
+
+    <div id="sidebar" class="closed" >
+        <button id="close-sidebar"><i class="fa-regular fa-x"></i></button>
+        <nav>
+            <ul>
+                <li><b><a href="#">Coleção</a></b></li>
+                <li><b><a href="#">Masculino</a></b></li>
+                <li><b><a href="#">Feminino</a></b></li>
+                <li><b><a href="#">Sobre</a></b></li>
+                <li><b><a href="#">Contato</a></b></li>
+            </ul>
+        </nav>
+        
+    </div>
 
     <div id="caixa-menu" style="display: none;">
         <h4>carrinho</h4>
@@ -49,6 +64,29 @@
     
     <section id="geral">
         <div>
+
+
+            <!--estilo de imagem mobile-->
+            <div class="slideshow-container">
+                <button id="prevBtn"><i class="fa-solid fa-play"></i></button>
+
+                <div class="slide fade">
+                    <img src="./img/image-product-1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide fade">
+                    <img src="./img/image-product-2.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide fade">
+                    <img src="./img/image-product-3.jpg" alt="Imagem 3">
+                </div>
+                <div class="slide fade">
+                    <img src="./img/image-product-4.jpg" alt="Imagem 4">
+                </div>
+                
+                <button id="nextBtn"> <i class="fa-solid fa-play"></i> </button>
+            </div>
+
+            <!--estilo de imagem desktop-->
             <div id="selecionada">
                 <img src="./img/image-product-1.jpg" alt="produto">
             </div>

@@ -45,4 +45,41 @@ let excluir = document.getElementById('excluir').addEventListener('click', ()=>{
         </div>`
     })
 })
+document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.toggle('open');
+});
 
+document.getElementById('close-sidebar').addEventListener('click', () => {
+    document.getElementById('sidebar').classList.remove('open');
+});
+
+
+let slideIndex = 0;
+showSlides();
+
+document.getElementById('nextBtn').onclick = ()=>{
+    slideIndex++;
+    showSlides();
+}
+
+document.getElementById('prevBtn').onclick = ()=>{
+    slideIndex--;
+    showSlides();
+}
+
+function showSlides(){
+    const slides = document.getElementsByClassName('slide');
+
+    if (slideIndex >= slides.length){
+        slideIndex = 0;
+    }
+    if (slideIndex < 0){
+        slideIndex = slideIndex + 4;
+    }
+
+    for (let i = 0; i < slides.length; i++){
+        slides[i].style.display = 'none';
+    }
+
+    slides[slideIndex].style.display = 'block';
+}
